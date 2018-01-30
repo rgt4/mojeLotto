@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mojeLotto</string>
+
+    <!--nazwy gier-->
+    <string name="lotto">lotto</string>
+    <string name="plus">plus</string>
+    <string name="superszansa">superszansa</string>
+    <string name="eurolotto">eurolotto</string>
+
+</resources>
