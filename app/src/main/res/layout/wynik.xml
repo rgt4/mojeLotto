@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_nazwa_gry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lotto" />
+
+    <TextView
+        android:id="@+id/tv_game_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/wynik_1"
+        app:layout_constraintStart_toEndOf="@+id/tv_nazwa_gry"
+        app:layout_constraintTop_toTopOf="@+id/tv_nazwa_gry"
+        tools:text="25 stycznia 2018" />
+
+    <TextView
+        android:id="@+id/wynik_1"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nazwa_gry"
+        tools:text="01" />
+
+    <TextView
+        android:id="@+id/wynik_2"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_1"
+        app:layout_constraintStart_toEndOf="@+id/wynik_1"
+        app:layout_constraintTop_toTopOf="@+id/wynik_1"
+        tools:text="02" />
+
+    <TextView
+    android:id="@+id/wynik_3"
+    style="@style/pileczka_z_liczba"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/pileczka_czerwona"
+    app:layout_constraintBottom_toBottomOf="@+id/wynik_2"
+    app:layout_constraintStart_toEndOf="@+id/wynik_2"
+    app:layout_constraintTop_toTopOf="@+id/wynik_2"
+    tools:text="03" />
+
+    <TextView
+        android:id="@+id/wynik_4"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_3"
+        app:layout_constraintStart_toEndOf="@+id/wynik_3"
+        app:layout_constraintTop_toTopOf="@+id/wynik_3"
+        tools:text="04" />
+
+    <TextView
+        android:id="@+id/wynik_5"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_4"
+        app:layout_constraintStart_toEndOf="@+id/wynik_4"
+        app:layout_constraintTop_toTopOf="@+id/wynik_4"
+        tools:text="05" />
+
+    <TextView
+        android:id="@+id/plusik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_5"
+        app:layout_constraintStart_toEndOf="@+id/wynik_5"
+        app:layout_constraintTop_toTopOf="@+id/wynik_5"
+        tools:text="+"
+        android:textSize="28sp"
+        android:visibility="visible"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/wynik_6"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_5"
+        app:layout_constraintStart_toEndOf="@+id/wynik_5"
+        app:layout_constraintTop_toTopOf="@+id/wynik_5"
+        tools:text="06" />
+
+    <TextView
+        android:id="@+id/wynik_7"
+        style="@style/pileczka_z_liczba"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pileczka_czerwona"
+        app:layout_constraintBottom_toBottomOf="@+id/wynik_6"
+        app:layout_constraintStart_toEndOf="@+id/wynik_6"
+        app:layout_constraintTop_toTopOf="@+id/wynik_6"
+        tools:text="07" />
+
+</android.support.constraint.ConstraintLayout>

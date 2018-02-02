@@ -7,16 +7,30 @@
     tools:context="pl.robertgt4.android.mojelotto.MainActivity">
 
     <TextView
+        android:id="@+id/testTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:id="@+id/testTV"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <FrameLayout
+        android:id="@+id/fl_lotto_wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <FrameLayout
+        android:id="@+id/fl_plus_wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@id/fl_lotto_wynik"
+        />
 
 </android.support.constraint.ConstraintLayout>
